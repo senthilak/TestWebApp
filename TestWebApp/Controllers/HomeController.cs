@@ -16,7 +16,8 @@ namespace TestWebApp.Controllers
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
-
+            Employee objEmp;
+ var Name=objEmp.Name;
             return View();
         }
 
@@ -26,5 +27,10 @@ namespace TestWebApp.Controllers
 
             return View();
         }
+    }
+    
+    public class Employee
+    {
+        public string Name{get;set;}
     }
 }
