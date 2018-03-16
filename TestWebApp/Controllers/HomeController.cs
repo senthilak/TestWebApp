@@ -16,8 +16,10 @@ namespace TestWebApp.Controllers
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
-            Employee objEmp;
+            Employee objEmp=new Employee();
  var Name=objEmp.Name;
+ objEmp.Name=Name;
+ string Nameing;
             return View();
         }
 
